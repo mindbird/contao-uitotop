@@ -21,5 +21,8 @@
         "src/system/modules/useronline": "system/modules/uitotop"
       }
     }
+  },
+  "replace": {
+    "contao-legacy/uitotop": "self.version"
   }
 }
