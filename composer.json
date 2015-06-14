@@ -8,9 +8,14 @@
   "authors": [
     {
       "name": "mindbird",
-      "email": "info@mindbird.de"
+      "email": "info@mindbird.de",
+      "homepage": "http://www.mindbird.de"
     }
   ],
+  "support": {
+    "issues": "https://github.com/mindbird/contao-uitotop/issues",
+    "source": "https://github.com/mindbird/contao-uitotop"
+  }
   "require": {
     "php": ">=5.3.2",
     "contao/core": ">=3.2,<4"
