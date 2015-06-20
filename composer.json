@@ -1,6 +1,6 @@
 {
   "name": "mindbird/contao-uitotop",
-  "description": "Ein kleiner anpassbarer Button um zum Anfang der Seite zu springen.",
+  "description": "Small adjustable Button to go to top of the page",
   "minimum-stability": "stable",
   "license": "proprietary",
   "keywords":["contao", "jquery", "toTop", "Seitenanfang"],
@@ -12,10 +12,6 @@
       "homepage": "http://www.mindbird.de"
     }
   ],
-  "support": {
-    "issues": "https://github.com/mindbird/contao-uitotop/issues",
-    "source": "https://github.com/mindbird/contao-uitotop"
-  },
   "require": {
     "php": ">=5.3.2",
     "contao/core": ">=3.2,<4"
@@ -23,8 +19,13 @@
   "extra": {
     "contao": {
       "sources": {
-        "src/system/modules/useronline": "system/modules/uitotop"
+        "contao": "system/modules/uitotop"
       }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "UiToTop\\": "src/"
     }
   },
   "replace": {
