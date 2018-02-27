@@ -13,9 +13,6 @@
       "role":"Developer"
     }
   ],
-  "replace": {
-    "contao-legacy/uitotop": "self.version"
-  },
   "require": {
     "contao/core-bundle": "~4.0"
   },
