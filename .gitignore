@@ -1,0 +1,24 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Contao 4 template
+/.idea/
+
+# App config
+/app/config/parameters.yml
+
+# Generated folders
+/assets/
+/files/
+/system/*
+!/system/config/
+/system/config/localconfig.php
+/vendor/
+/var/cache/*
+/var/logs/*
+
+# Symlinked resources
+/web/assets
+/web/bundles/
+/web/files/
+/web/share/
+/web/system/
+/web/vendor/### Example user template template
