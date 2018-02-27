@@ -4,28 +4,33 @@
   "minimum-stability": "stable",
   "license": "proprietary",
   "keywords":["contao", "jquery", "toTop", "Seitenanfang"],
-  "type":"contao-module",
+  "type":"contao-bundle",
   "authors": [
     {
       "name": "mindbird",
       "email": "info@mindbird.de",
-      "homepage": "http://www.mindbird.de"
+      "homepage": "http://www.mindbird.de",
+      "role":"Developer"
     }
   ],
+  "replace": {
+    "contao-legacy/uitotop": "self.version"
+  },
   "require": {
-    "contao/core-bundle": "~3.2 || ~4.0",
-    "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
+    "contao/core-bundle": "~4.0"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  },
+  "conflict": {
+    "contao/manager-plugin": "<2.0 || >=3.0"
   },
   "extra": {
-    "contao": {
-      "sources": {
-        "contao": "system/modules/uitotop"
-      }
-    }
+    "contao-manager-plugin": "Mindbird\\Contao\\UiToTop\\ContaoManagerPlugin"
   },
   "autoload": {
     "psr-4": {
-      "UiToTop\\": "src/"
+      "Mindbird\\Contao\\UiToTop\\": "src/"
     }
   },
   "replace": {
