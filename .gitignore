@@ -1,6 +1,5 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Contao 4 template
 /.idea/
+composer.lock
 
 # App config
 /app/config/parameters.yml
