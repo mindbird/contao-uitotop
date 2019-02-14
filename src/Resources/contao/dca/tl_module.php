@@ -11,5 +11,5 @@ $GLOBALS['TL_DCA']['tl_module']['fields']['uitotop_text'] = array(
         'allowHtml' => true,
         'default' => 'Nach oben'
     ],
-    'sql' => "varchar(255) NOT NULL default ''"
+    'sql' => "text NULL"
 );
