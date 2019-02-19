@@ -17,10 +17,10 @@
 			scrollSpeed : 1200,
 			easingType : 'linear'
 		};
-		settings = $.extend(defaults, options); 
+		settings = $.extend(defaults, options);
 		containerIDhash = '#' + settings.containerID;
 
-		$('body').append('<a href="#" id="' + settings.containerID + '">' + settings.text + '</a>');
+		$('body').append('<a id="' + settings.containerID + '">' + settings.text + '</a>');
 		$(containerIDhash).hide().on('click.UItoTop', function() {
 			$('html, body').animate({
 				scrollTop : 0
