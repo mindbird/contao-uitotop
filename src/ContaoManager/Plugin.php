@@ -16,7 +16,8 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(UiToTopBundle::class)->setLoadAfter([ContaoCoreBundle::class])->setReplace(['uitotop'])
+            BundleConfig::create(UiToTopBundle::class)
+                ->setLoadAfter([ContaoCoreBundle::class])
         ];
     }
 }

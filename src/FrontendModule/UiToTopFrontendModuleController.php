@@ -6,6 +6,7 @@ use Contao\BackendTemplate;
 use Contao\Controller;
 use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsFrontendModule;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\CoreBundle\Twig\FragmentTemplate;
 use Contao\ModuleModel;
@@ -13,7 +14,7 @@ use Contao\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-#[AsContentElement(UiToTopFrontendModuleController::TYPE, category: "miscellaneous")]
+#[AsFrontendModule(UiToTopFrontendModuleController::TYPE, category: "miscellaneous")]
 class UiToTopFrontendModuleController extends AbstractFrontendModuleController
 {
     public const TYPE = 'uitotop';
