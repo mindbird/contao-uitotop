@@ -6,7 +6,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class ContaoUiToTopExtension extends \Symfony\Component\DependencyInjection\Extension\Extension
+class UiToTopExtension extends \Symfony\Component\DependencyInjection\Extension\Extension
 {
 
     /**
