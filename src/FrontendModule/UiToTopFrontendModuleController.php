@@ -8,13 +8,10 @@ use Contao\CoreBundle\Controller\FrontendModule\AbstractFrontendModuleController
 use Contao\CoreBundle\DependencyInjection\Attribute\AsContentElement;
 use Contao\CoreBundle\Routing\ScopeMatcher;
 use Contao\CoreBundle\Twig\FragmentTemplate;
-use Contao\FrontendTemplate;
 use Contao\ModuleModel;
 use Contao\Template;
-use Mindbird\ContaoNodeOverlay\Controller\NodesOverlayContentElementController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Terminal42\NodeBundle\NodeManager;
 
 #[AsContentElement(UiToTopFrontendModuleController::TYPE, category: "miscellaneous")]
 class UiToTopFrontendModuleController extends AbstractFrontendModuleController
@@ -37,7 +34,7 @@ class UiToTopFrontendModuleController extends AbstractFrontendModuleController
         $template->text = $model->text;
 
         $GLOBALS['TL_CSS'][] = 'bundles/uitotop/css/ui.totop.min.css|screen|static';
-        $GLOBALS['TL_BODY'][] = \Contao\Template::generateScriptTag(
+        $GLOBALS['TL_BODY'][] = Template::generateScriptTag(
             Controller::addAssetsUrlTo('bundles/uitotop/js/jquery.ui.totop.min.js'),
             false,
             true

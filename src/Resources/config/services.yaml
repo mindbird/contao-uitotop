@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    autoconfigure: true
+
+  Mindbird\ContaoNodeOverlay\Controller\NodesOverlayContentElementController:
+    autoconfigure: true
+    arguments:
+      $scopeMatcher: '@contao.routing.scope_matcher'
