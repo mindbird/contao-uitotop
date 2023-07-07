@@ -4,9 +4,10 @@ namespace Mindbird\ContaoUiToTop\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class UiToTopExtension extends \Symfony\Component\DependencyInjection\Extension\Extension
+class UiToTopExtension extends Extension
 {
 
     /**
