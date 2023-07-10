@@ -32,7 +32,7 @@ class UiToTopFrontendModuleController extends AbstractFrontendModuleController
             return $template->getResponse();
         }
 
-        $template->text = $model->text;
+        $template->text = $model->uitotop_text;
 
         $GLOBALS['TL_CSS'][] = 'bundles/uitotop/css/ui.totop.min.css|screen|static';
         $GLOBALS['TL_BODY'][] = Template::generateScriptTag(
